@@ -6,8 +6,17 @@ const app = express();
 const PORT = process.env.PORT || 3000; // Usa el puerto del servidor o 3000 en local
 
 // Middleware
-app.use(cors());
+//app.use(cors());
 app.use(express.json());
+
+
+// 🔹 Configurar manualmente los encabezados CORS
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Permite cualquier origen
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
 
 // Cargar datos desde el JSON
 const data = JSON.parse(fs.readFileSync("ciudades.json", "utf-8"));
@@ -19,7 +28,7 @@ app.get("/ciudades", (req, res) => {
 
 // Ruta para filtrar ciudades por temperatura, viento o presión
 app.get("/filtrar", (req, res) => {
-  const { temperatura, viento, presion } = req.query;
+  const { temperatura, precipitaciones, viento } = req.query;
 
   let ciudadesFiltradas = data;
 
@@ -29,15 +38,15 @@ app.get("/filtrar", (req, res) => {
     );
   }
 
-  if (viento) {
+  if (precipitaciones) {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Viento >= parseFloat(viento)
+      (c) => c.Precipitaciones >= parseFloat(precipitaciones)
     );
   }
 
-  if (presion) {
+  if (viento) {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Presion >= parseFloat(presion)
+      (c) => c.Viento >= parseFloat(viento)
     );
   }
 
