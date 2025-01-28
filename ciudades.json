@@ -1,0 +1,82 @@
+[
+ {
+   "ID": 1,
+   "Ciudad": "Moscu",
+   "Temperatura": 8,
+   "Precipitaciones": 640.9,
+   "Viento": 3.6,
+   "Presion": 1016.3
+ },
+ {
+   "ID": 2,
+   "Ciudad": "Paris",
+   "Temperatura": 13.2,
+   "Precipitaciones": 944.9,
+   "Viento": 10.9,
+   "Presion": 1016.3
+ },
+ {
+   "ID": 3,
+   "Ciudad": "Buenos Aires",
+   "Temperatura": 18.1,
+   "Precipitaciones": 1296.2,
+   "Viento": 14.2,
+   "Presion": 1016.1
+ },
+ {
+   "ID": 4,
+   "Ciudad": "Oslo",
+   "Temperatura": 7.6,
+   "Precipitaciones": 1057.1,
+   "Viento": 9.3,
+   "Presion": 1011
+ },
+ {
+   "ID": 5,
+   "Ciudad": "Johannesburg",
+   "Temperatura": 17.2,
+   "Precipitaciones": 410.3,
+   "Viento": 13.4,
+   "Presion": 1019.3
+ },
+ {
+   "ID": 6,
+   "Ciudad": "Bergen",
+   "Temperatura": 9.3,
+   "Precipitaciones": 2769.9,
+   "Viento": 12.8,
+   "Presion": 1009.5
+ },
+ {
+   "ID": 7,
+   "Ciudad": "La Coruña",
+   "Temperatura": 15.6,
+   "Precipitaciones": 1156.8,
+   "Viento": 12.6,
+   "Presion": 1018.3
+ },
+ {
+   "ID": 8,
+   "Ciudad": "Nueva York",
+   "Temperatura": 14.5,
+   "Precipitaciones": 1092.1,
+   "Viento": 10.5,
+   "Presion": 1016.9
+ },
+ {
+   "ID": 9,
+   "Ciudad": "Tokio",
+   "Temperatura": 17.6,
+   "Precipitaciones": 1537.3,
+   "Viento": 9.8,
+   "Presion": 1013.9
+ },
+ {
+   "ID": 10,
+   "Ciudad": "Antofagasta",
+   "Temperatura": 16.8,
+   "Precipitaciones": 0.5,
+   "Viento": 14.1,
+   "Presion": 1015
+ }
+]
