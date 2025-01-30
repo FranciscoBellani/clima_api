@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000; // Usa el puerto del servidor o 3000 en local
 
 // Middleware
-//app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 
