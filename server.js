@@ -80,11 +80,11 @@ if (viento) {
     );
   } else if (viento === "Ventoso") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Viento >= 15 && c.Viento <= 25
+      (c) => c.Viento >= 15 && c.Viento <= 24
     );
   } else if (viento === "Muy Ventoso") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Viento > 25
+      (c) => c.Viento > 24
     );
   }
 }
