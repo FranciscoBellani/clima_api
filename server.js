@@ -26,9 +26,11 @@ app.get("/filtrar", (req, res) => {
  // Filtrar por temperatura
 if (temperatura) {
   if (temperatura === "Frío") {
-    ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Temperatura >= -5 && c.Temperatura <= 8
-    );
+    // Asegurarnos de que las ciudades con temperaturas entre -5 y 8 grados pasen el filtro
+    ciudadesFiltradas = ciudadesFiltradas.filter((c) => {
+      console.log(`Ciudad: ${c.Ciudad}, Temperatura: ${c.Temperatura}`);  // Mostrar la temperatura
+      return c.Temperatura >= -5 && c.Temperatura <= 8;
+    });
   } else if (temperatura === "Templado") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
       (c) => c.Temperatura >= 9 && c.Temperatura <= 20
@@ -43,6 +45,7 @@ if (temperatura) {
     );
   }
 }
+
 
 // Filtrar por precipitaciones
 if (precipitaciones) {
