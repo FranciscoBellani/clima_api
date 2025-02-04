@@ -1,82 +1,322 @@
 [
- {
-   "ID": 1,
-   "Ciudad": "Moscu",
-   "Temperatura": 8,
-   "Precipitaciones": 640.9,
-   "Viento": 3.6,
-   "Presion": 1016.3
- },
- {
-   "ID": 2,
-   "Ciudad": "Paris",
-   "Temperatura": 13.2,
-   "Precipitaciones": 944.9,
-   "Viento": 10.9,
-   "Presion": 1016.3
- },
- {
-   "ID": 3,
-   "Ciudad": "Buenos Aires",
-   "Temperatura": 18.1,
-   "Precipitaciones": 1296.2,
-   "Viento": 14.2,
-   "Presion": 1016.1
- },
- {
-   "ID": 4,
-   "Ciudad": "Oslo",
-   "Temperatura": 7.6,
-   "Precipitaciones": 1057.1,
-   "Viento": 9.3,
-   "Presion": 1011
- },
- {
-   "ID": 5,
-   "Ciudad": "Johannesburg",
-   "Temperatura": 17.2,
-   "Precipitaciones": 410.3,
-   "Viento": 13.4,
-   "Presion": 1019.3
- },
- {
-   "ID": 6,
-   "Ciudad": "Bergen",
-   "Temperatura": 9.3,
-   "Precipitaciones": 2769.9,
-   "Viento": 12.8,
-   "Presion": 1009.5
- },
- {
-   "ID": 7,
-   "Ciudad": "La Coruña",
-   "Temperatura": 15.6,
-   "Precipitaciones": 1156.8,
-   "Viento": 12.6,
-   "Presion": 1018.3
- },
- {
-   "ID": 8,
-   "Ciudad": "Nueva York",
-   "Temperatura": 14.5,
-   "Precipitaciones": 1092.1,
-   "Viento": 10.5,
-   "Presion": 1016.9
- },
- {
-   "ID": 9,
-   "Ciudad": "Tokio",
-   "Temperatura": 17.6,
-   "Precipitaciones": 1537.3,
-   "Viento": 9.8,
-   "Presion": 1013.9
- },
- {
-   "ID": 10,
-   "Ciudad": "Antofagasta",
-   "Temperatura": 16.8,
-   "Precipitaciones": 0.5,
-   "Viento": 14.1,
-   "Presion": 1015
- }
+  {
+      "ID": 1,
+      "Ciudad": "Moscu",
+      "Temperatura": 8,
+      "Precipitaciones": 640.9,
+      "Viento": 3.6,
+      "Presion": 1016.3
+  },
+  {
+      "ID": 2,
+      "Ciudad": "Paris",
+      "Temperatura": 13.2,
+      "Precipitaciones": 944.9,
+      "Viento": 10.9,
+      "Presion": 1016.3
+  },
+  {
+      "ID": 3,
+      "Ciudad": "Buenos Aires",
+      "Temperatura": 18.1,
+      "Precipitaciones": 1296.2,
+      "Viento": 14.2,
+      "Presion": 1016.1
+  },
+  {
+      "ID": 4,
+      "Ciudad": "Oslo",
+      "Temperatura": 7.6,
+      "Precipitaciones": 1057.1,
+      "Viento": 9.3,
+      "Presion": 1011
+  },
+  {
+      "ID": 5,
+      "Ciudad": "Johannesburgo",
+      "Temperatura": 17.2,
+      "Precipitaciones": 410.3,
+      "Viento": 13.4,
+      "Presion": 1019.3
+  },
+  {
+      "ID": 6,
+      "Ciudad": "Bergen",
+      "Temperatura": 9.3,
+      "Precipitaciones": 2769.9,
+      "Viento": 12.8,
+      "Presion": 1009.5
+  },
+  {
+      "ID": 7,
+      "Ciudad": "La Coruña",
+      "Temperatura": 15.6,
+      "Precipitaciones": 1156.8,
+      "Viento": 12.6,
+      "Presion": 1018.3
+  },
+  {
+      "ID": 8,
+      "Ciudad": "Nueva York",
+      "Temperatura": 14.5,
+      "Precipitaciones": 1092.1,
+      "Viento": 10.5,
+      "Presion": 1016.9
+  },
+  {
+      "ID": 9,
+      "Ciudad": "Tokio",
+      "Temperatura": 17.6,
+      "Precipitaciones": 1537.3,
+      "Viento": 9.8,
+      "Presion": 1013.9
+  },
+  {
+      "ID": 10,
+      "Ciudad": "Antofagasta",
+      "Temperatura": 16.8,
+      "Precipitaciones": 0.5,
+      "Viento": 14.1,
+      "Presion": 1015
+  },
+  {
+      "country": "United States",
+      "temperature_avg_c": 13,
+      "rainfall_avg_mm": 715,
+      "wind_avg_kph": 12
+  },
+  {
+      "country": "Canada",
+      "temperature_avg_c": 5,
+      "rainfall_avg_mm": 537,
+      "wind_avg_kph": 14
+  },
+  {
+      "country": "United Kingdom",
+      "temperature_avg_c": 10,
+      "rainfall_avg_mm": 1154,
+      "wind_avg_kph": 15
+  },
+  {
+      "country": "France",
+      "temperature_avg_c": 12,
+      "rainfall_avg_mm": 867,
+      "wind_avg_kph": 13
+  },
+  {
+      "country": "Germany",
+      "temperature_avg_c": 9,
+      "rainfall_avg_mm": 700,
+      "wind_avg_kph": 14
+  },
+  {
+      "country": "Italy",
+      "temperature_avg_c": 15,
+      "rainfall_avg_mm": 832,
+      "wind_avg_kph": 10
+  },
+  {
+      "country": "Spain",
+      "temperature_avg_c": 17,
+      "rainfall_avg_mm": 636,
+      "wind_avg_kph": 12
+  },
+  {
+      "country": "Australia",
+      "temperature_avg_c": 21,
+      "rainfall_avg_mm": 534,
+      "wind_avg_kph": 11
+  },
+  {
+      "country": "India",
+      "temperature_avg_c": 25,
+      "rainfall_avg_mm": 1083,
+      "wind_avg_kph": 10
+  },
+  {
+      "country": "China",
+      "temperature_avg_c": 14,
+      "rainfall_avg_mm": 645,
+      "wind_avg_kph": 12
+  },
+  {
+      "country": "Japan",
+      "temperature_avg_c": 12,
+      "rainfall_avg_mm": 1680,
+      "wind_avg_kph": 13
+  },
+  {
+      "country": "Brazil",
+      "temperature_avg_c": 25,
+      "rainfall_avg_mm": 1782,
+      "wind_avg_kph": 9
+  },
+  {
+      "country": "Argentina",
+      "temperature_avg_c": 15,
+      "rainfall_avg_mm": 591,
+      "wind_avg_kph": 14
+  },
+  {
+      "country": "Mexico",
+      "temperature_avg_c": 21,
+      "rainfall_avg_mm": 758,
+      "wind_avg_kph": 10
+  },
+  {
+      "country": "Russia",
+      "temperature_avg_c": -5,
+      "rainfall_avg_mm": 460,
+      "wind_avg_kph": 16
+  },
+  {
+      "country": "South Africa",
+      "temperature_avg_c": 17,
+      "rainfall_avg_mm": 464,
+      "wind_avg_kph": 11
+  },
+  {
+      "country": "Egypt",
+      "temperature_avg_c": 22,
+      "rainfall_avg_mm": 51,
+      "wind_avg_kph": 14
+  },
+  {
+      "country": "Kenya",
+      "temperature_avg_c": 20,
+      "rainfall_avg_mm": 630,
+      "wind_avg_kph": 12
+  },
+  {
+      "country": "Nigeria",
+      "temperature_avg_c": 27,
+      "rainfall_avg_mm": 1180,
+      "wind_avg_kph": 10
+  },
+  {
+      "country": "Saudi Arabia",
+      "temperature_avg_c": 26,
+      "rainfall_avg_mm": 59,
+      "wind_avg_kph": 15
+  },
+  {
+      "country": "Turkey",
+      "temperature_avg_c": 13,
+      "rainfall_avg_mm": 593,
+      "wind_avg_kph": 12
+  },
+  {
+      "country": "Thailand",
+      "temperature_avg_c": 28,
+      "rainfall_avg_mm": 1524,
+      "wind_avg_kph": 10
+  },
+  {
+      "country": "Vietnam",
+      "temperature_avg_c": 24,
+      "rainfall_avg_mm": 1680,
+      "wind_avg_kph": 11
+  },
+  {
+      "country": "Indonesia",
+      "temperature_avg_c": 26,
+      "rainfall_avg_mm": 2700,
+      "wind_avg_kph": 9
+  },
+  {
+      "country": "South Korea",
+      "temperature_avg_c": 12,
+      "rainfall_avg_mm": 1274,
+      "wind_avg_kph": 13
+  },
+  {
+      "country": "New Zealand",
+      "temperature_avg_c": 10,
+      "rainfall_avg_mm": 1736,
+      "wind_avg_kph": 15
+  },
+  {
+      "country": "Sweden",
+      "temperature_avg_c": 2,
+      "rainfall_avg_mm": 539,
+      "wind_avg_kph": 14
+  },
+  {
+      "country": "Norway",
+      "temperature_avg_c": 3,
+      "rainfall_avg_mm": 1418,
+      "wind_avg_kph": 15
+  },
+  {
+      "country": "Finland",
+      "temperature_avg_c": 2,
+      "rainfall_avg_mm": 655,
+      "wind_avg_kph": 14
+  },
+  {
+      "country": "Netherlands",
+      "temperature_avg_c": 10,
+      "rainfall_avg_mm": 790,
+      "wind_avg_kph": 16
+  },
+  {
+      "country": "Belgium",
+      "temperature_avg_c": 10,
+      "rainfall_avg_mm": 847,
+      "wind_avg_kph": 15
+  },
+  {
+      "country": "Switzerland",
+      "temperature_avg_c": 8,
+      "rainfall_avg_mm": 1337,
+      "wind_avg_kph": 13
+  },
+  {
+      "country": "Austria",
+      "temperature_avg_c": 8,
+      "rainfall_avg_mm": 1100,
+      "wind_avg_kph": 12
+  },
+  {
+      "country": "Greece",
+      "temperature_avg_c": 18,
+      "rainfall_avg_mm": 652,
+      "wind_avg_kph": 11
+  },
+  {
+      "country": "Portugal",
+      "temperature_avg_c": 16,
+      "rainfall_avg_mm": 705,
+      "wind_avg_kph": 12
+  },
+  {
+      "country": "Ireland",
+      "temperature_avg_c": 9,
+      "rainfall_avg_mm": 1233,
+      "wind_avg_kph": 16
+  },
+  {
+      "country": "Poland",
+      "temperature_avg_c": 8,
+      "rainfall_avg_mm": 600,
+      "wind_avg_kph": 14
+  },
+  {
+      "country": "Ukraine",
+      "temperature_avg_c": 8,
+      "rainfall_avg_mm": 565,
+      "wind_avg_kph": 13
+  },
+  {
+      "country": "Chile",
+      "temperature_avg_c": 11,
+      "rainfall_avg_mm": 522,
+      "wind_avg_kph": 15
+  },
+  {
+      "country": "Colombia",
+      "temperature_avg_c": 24,
+      "rainfall_avg_mm": 3240,
+      "wind_avg_kph": 8
+  }
 ]
