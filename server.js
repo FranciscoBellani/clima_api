@@ -51,19 +51,19 @@ if (temperatura) {
 if (precipitaciones) {
   if (precipitaciones === "Seco") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Precipitaciones >= 0 && c.Precipitaciones <= 50
+      (c) => c.Precipitaciones >= 0 && c.Precipitaciones <= 250
     );
   } else if (precipitaciones === "Moderado") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Precipitaciones >= 50 && c.Precipitaciones <= 600
+      (c) => c.Precipitaciones >= 250 && c.Precipitaciones <= 600
     );
   } else if (precipitaciones === "Lluvioso") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Precipitaciones >= 601 && c.Precipitaciones <= 1000
+      (c) => c.Precipitaciones >= 601 && c.Precipitaciones <= 900
     );
   } else if (precipitaciones === "Muy Lluvioso") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Precipitaciones >= 1001
+      (c) => c.Precipitaciones >= 901
     );
   }
 }
@@ -84,7 +84,7 @@ if (viento) {
     );
   } else if (viento === "Muy Ventoso") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Viento > 20
+      (c) => c.Viento > 25
     );
   }
 }
