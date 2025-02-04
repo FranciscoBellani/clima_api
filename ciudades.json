@@ -244,7 +244,7 @@
     "Ciudad": "Wellington",
     "Temperatura": 10,
     "Precipitaciones": 1736,
-    "Viento": 15,
+    "Viento": 25,
     "Presion": 1015
   },
   {
@@ -325,6 +325,6 @@
     "Temperatura": 50,
     "Precipitaciones": 110,
     "Viento": 18,
-    "Presión": null
+    "Presión": 1016
   }
 ]
