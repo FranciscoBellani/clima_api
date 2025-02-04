@@ -23,7 +23,7 @@ app.get("/filtrar", (req, res) => {
 
   let ciudadesFiltradas = data;
 
-  // Filtrar por temperatura
+ // Filtrar por temperatura
 if (temperatura) {
   if (temperatura === "Frío") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
@@ -86,7 +86,9 @@ if (viento) {
   }
 }
 
+// Si no hay coincidencias, se devuelve un array vacío
 res.json(ciudadesFiltradas);
+
 
 });
 
