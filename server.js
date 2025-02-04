@@ -24,69 +24,70 @@ app.get("/filtrar", (req, res) => {
   let ciudadesFiltradas = data;
 
   // Filtrar por temperatura
-  if (temperatura) {
-    if (temperatura === "Frío") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Temperatura >= -5 && c.Temperatura <= 8
-      );
-    } else if (temperatura === "Templado") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Temperatura >= 9 && c.Temperatura <= 20
-      );
-    } else if (temperatura === "Cálido") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Temperatura >= 21 && c.Temperatura <= 30
-      );
-    } else if (temperatura === "Caluroso") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Temperatura > 30
-      );
-    }
+if (temperatura) {
+  if (temperatura === "Frío") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Temperatura >= -5 && c.Temperatura <= 8
+    );
+  } else if (temperatura === "Templado") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Temperatura >= 9 && c.Temperatura <= 20
+    );
+  } else if (temperatura === "Cálido") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Temperatura >= 21 && c.Temperatura <= 30
+    );
+  } else if (temperatura === "Caluroso") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Temperatura > 30
+    );
   }
+}
 
-  // Filtrar por precipitaciones
-  if (precipitaciones) {
-    if (precipitaciones === "Seco") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Precipitaciones >= 0 && c.Precipitaciones <= 50
-      );
-    } else if (precipitaciones === "Moderado") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Precipitaciones >= 50 && c.Precipitaciones <= 400
-      );
-    } else if (precipitaciones === "Lluvioso") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Precipitaciones >= 401 && c.Precipitaciones <= 800
-      );
-      else if (precipitaciones === "Muy Lluvioso") {
-        ciudadesFiltradas = ciudadesFiltradas.filter(
-          (c) => c.Precipitaciones >= 801
-        );
-    }
+// Filtrar por precipitaciones
+if (precipitaciones) {
+  if (precipitaciones === "Seco") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Precipitaciones >= 0 && c.Precipitaciones <= 50
+    );
+  } else if (precipitaciones === "Moderado") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Precipitaciones >= 50 && c.Precipitaciones <= 400
+    );
+  } else if (precipitaciones === "Lluvioso") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Precipitaciones >= 401 && c.Precipitaciones <= 800
+    );
+  } else if (precipitaciones === "Muy Lluvioso") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Precipitaciones >= 801
+    );
   }
+}
 
-  // Filtrar por viento
-  if (viento) {
-    if (viento === "Calmo") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Viento >= 0 && c.Viento <= 10
-      );
-    } else if (viento === "Brisa") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Viento >=  11 && c.Viento <= 30
-      );
-    } else if (viento === "Ventoso") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Viento >=  31 && c.Viento <= 70
-      );
-    } else if (viento === "Muy Ventoso") {
-      ciudadesFiltradas = ciudadesFiltradas.filter(
-        (c) => c.Viento > 70
-      );
-    }
+// Filtrar por viento
+if (viento) {
+  if (viento === "Calmo") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Viento >= 0 && c.Viento <= 10
+    );
+  } else if (viento === "Brisa") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Viento >= 11 && c.Viento <= 30
+    );
+  } else if (viento === "Ventoso") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Viento >= 31 && c.Viento <= 70
+    );
+  } else if (viento === "Muy Ventoso") {
+    ciudadesFiltradas = ciudadesFiltradas.filter(
+      (c) => c.Viento > 70
+    );
   }
+}
 
-  res.json(ciudadesFiltradas);
+res.json(ciudadesFiltradas);
+
 });
 
 
