@@ -55,15 +55,15 @@ if (precipitaciones) {
     );
   } else if (precipitaciones === "Moderado") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Precipitaciones >= 50 && c.Precipitaciones <= 400
+      (c) => c.Precipitaciones >= 50 && c.Precipitaciones <= 600
     );
   } else if (precipitaciones === "Lluvioso") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Precipitaciones >= 401 && c.Precipitaciones <= 800
+      (c) => c.Precipitaciones >= 601 && c.Precipitaciones <= 1000
     );
   } else if (precipitaciones === "Muy Lluvioso") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
-      (c) => c.Precipitaciones >= 801
+      (c) => c.Precipitaciones >= 1001
     );
   }
 }
