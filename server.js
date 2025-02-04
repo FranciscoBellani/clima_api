@@ -25,7 +25,7 @@ app.get("/filtrar", (req, res) => {
 
  // Filtrar por temperatura
 if (temperatura) {
-  if (temperatura === "Frío") {
+  if (temperatura === "Frio") {
     // Asegurarnos de que las ciudades con temperaturas entre -5 y 8 grados pasen el filtro
     ciudadesFiltradas = ciudadesFiltradas.filter((c) => {
       console.log(`Ciudad: ${c.Ciudad}, Temperatura: ${c.Temperatura}`);  // Mostrar la temperatura
@@ -35,7 +35,7 @@ if (temperatura) {
     ciudadesFiltradas = ciudadesFiltradas.filter(
       (c) => c.Temperatura >= 9 && c.Temperatura <= 20
     );
-  } else if (temperatura === "Cálido") {
+  } else if (temperatura === "Calido") {
     ciudadesFiltradas = ciudadesFiltradas.filter(
       (c) => c.Temperatura >= 21 && c.Temperatura <= 30
     );
